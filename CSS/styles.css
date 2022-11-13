@@ -197,10 +197,8 @@ header {
     justify-content: space-evenly; */
 
     justify-content: space-between;
-}
 
-#nav-links li {
-    margin: 10px;
+    height: 50px;
 }
 
 #nav-links {
@@ -209,6 +207,20 @@ header {
     list-style: none;
 }
 
+#nav-links li {
+    margin: 20px;
+    line-height: 0px;
+}
+
 .links {
     text-decoration: none;
+}
+
+#nav-button {
+    background-color: rgba(0, 0, 255, 0.6);
+    color: white;
+}
+
+#nav-button:hover {
+    background-color: rgba(0, 0, 255, 1);
 }
