@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <!-- Meta Data of the data -->
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- Actual content of the document -->
+        <!-- Heading Elements (h1 - h6) -->
+        <h1>Heading - 1</h1> 
+        <!-- <h2>Heading - 2</h2> 
+        <h3>Heading - 3</h3> 
+        <h4>Heading - 4</h4> 
+        <h5>Heading - 5</h5> 
+        <h6>Heading - 6</h6> -->
+
+        <!-- Self-Ending Elt -->
+        <hr />
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit possimus eum suscipit incidunt <b>quod vitae excepturi unde culpa</b> blanditiis aliquam voluptates sequi in vero est, optio tempore atque molestiae facilis! Maxime repudiandae consequatur neque accusamus, <br /> laborum aliquam iste eos facere molestias ipsam libero officia provident eius. <i>Obcaecati rem quidem placeat</i> libero suscipit quaerat perspiciatis. Recusandae, aliquid perspiciatis natus aliquam error impedit, sit aspernatur pariatur numquam saepe exercitationem tenetur esse voluptates fuga qui delectus magnam voluptas voluptatibus? Corrupti accusamus rerum at iusto, commodi, repellendus veniam distinctio libero mollitia dolore totam dolores! Deserunt debitis tempora rerum beatae, eius ullam cumque voluptate commodi!</p>
+
+        <!-- HTML ELEMENTS ( <> + </> ) -->
+
+        <!-- Inline Elt -->
+        <!-- Anchors & Links -->
+
+        <!-- Absolute Link (https://) -->
+        <a href="https://www.google.com" target="_blank" >here is a link to Google</a> <br />
+        <!-- Relative Link (./) -> Used to link other pages of the app -->
+        <a href="./Other Pages/about-us.html">here is a another link</a> <br />
+        <a>this is a link</a>
+
+        <hr />
+
+        <h3>HTML Lists - </h3>
+        <h5>Ordered List (ol) - </h5>
+        <!-- type - 1(default), a, A, i, I -->
+        <ol type="I">
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ol>
+
+        <h5>Unordered List (ul) - </h5>
+        <ul>
+            <li>List Item - 1</li>
+            <li>List Item - 2</li>
+            <li>List Item - 3</li>
+            <li>List Item - 4</li>
+            <li>List Item - 5</li>
+        </ul>
+
+        <hr />
+
+        <!-- NOTE - You can create Table Rows by using <tr> </tr> byt there exitst no <tc> </tc> to create Table Coloumns -->
+        <h3>HTML Tables - </h3>
+        <table border="5">
+            <!-- Table Head -->
+            <thead>
+                <!-- Row of the table head  -->
+                <tr> <i><b><u style="text-align: center;"> Lovely Professional University </u></b></i> </tr>
+                <tr>
+                    <th>Emp ID</th>
+                    <th>Emp Name</th>
+                    <th>Emp Designation</th>
+                    <th>Emp Email</th>
+                </tr>
+            </thead>
+
+            <!-- Table Body  -->
+            <tbody>
+                <tr>
+                    <td>EMP001</td>
+                    <td>Employee One</td>
+                    <td>SDE Intern</td>
+                    <td>empOne@company.com</td>
+                </tr>
+                <tr>
+                    <td>EMP002</td>
+                    <td>Employee Two</td>
+                    <td>SDE - I</td>
+                    <td>empTwo@company.com</td>
+                </tr>
+                <tr>
+                    <td>EMP003</td>
+                    <td>Employee Three</td>
+                    <td>SDE - II</td>
+                    <td>empThree@company.com</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr />
+
+        <h3>HTML Forms -</h3>
+        <!-- FORM -> Input from the user | Accept user info / user details -->
+        <form action="process.php">
+            <!-- <label for="name">Name - </label> -->
+            <input type="text" placeholder="enter your name..." /> <br /> <br />
+            <!-- username@hostname.com -->
+            <input type="email" placeholder="enter your email..." /> <br /> <br />
+            <!-- <label>Password -</label> -->
+            <input type="password" placeholder="enter your password..." /> <br /> <br />
+            <input type="date" placeholder="enter your password..." /> <br /> <br />
+            <input type="file" placeholder="enter your password..." /> <br /> <br />
+            <input type="color" placeholder="enter your password..." /> <br /> <br />
+            <input type="number" placeholder="enter your password..." /> <br /> <br />
+            <input type="range" placeholder="enter your marks..." /> <br /> <br />
+
+            <input type="submit" value="SUBMIT HERE">
+            <!-- <button>CLICK ME!</button> -->
+        </form>
+
+        <hr />
+
+        <h3>HTML Multi-Medias</h3>
+        <h5>Google Maps - </h5>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3410.726564801248!2d75.7029548157459!3d31.255991981457786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1665548467828!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <hr />
+
+        <h5>YouTube Videos - </h5>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1TsVjvEkc4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <hr />
+        <h5>Videos - </h5>
+        <video style="width: 75%; height: 400px;" src="./assets/videos/my-video.mp4" controls ></video>
+
+        <hr />
+        <h5>Audios - </h5>
+        <audio src="./assets/audios/my-audio.mp3" controls ></audio>
+
+        <hr />
+        <h5>HTMl 5 Semantics - DIFF B/W HTML 5 and PREV VERSIONS - </h5>
+
+        <!-- div -> Division -->
+        <div id="my-div">
+            <div id="my-div-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id accusantium dignissimos voluptates facilis voluptas soluta aliquid doloremque vel, rerum culpa optio praesentium ducimus totam, corrupti excepturi, et dolorum laboriosam earum. Aspernatur quasi, molestias dolorum nemo ea odio, error aliquam laudantium velit qui pariatur dolor deleniti perspiciatis cupiditate fuga iste minus tempore, adipisci animi cumque vel.</p>
+            </div>
+            <h4>Hello, this is a DIV</h4>
+            <p>Lorem <span style="background-color: yellow;">ipsum dolor sit amet consectetur</span> adipisicing elit. Officia omnis nostrum minus ex quos voluptates asperiores possimus enim nihil tenetur doloremque laboriosam blanditiis esse ea, eaque, at veniam reprehenderit vitae necessitatibus rerum obcaecati consequuntur. Porro laboriosam saepe expedita perspiciatis repellat provident eius similique minima, nesciunt esse quos beatae eligendi repudiandae?</p>
+            <ul>
+                <li>List Item - 1</li>
+                <li>List Item - 2</li>
+                <li>List Item - 3</li>
+                <li>List Item - 4</li>
+                <li>List Item - 5</li>
+            </ul>
+            <div>
+                <h4>Another Heading</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat consectetur quidem saepe explicabo cumque, quasi nostrum voluptas! Delectus beatae animi et eligendi. Recusandae, est non cumque assumenda, rerum vel tempore illum omnis magnam impedit fugiat ipsa itaque dolore libero nisi placeat unde deleniti facilis doloremque aperiam maiores dicta? Earum, quaerat iure veritatis cum ea aliquam repellat porro saepe laborum nobis nemo, temporibus architecto autem provident!</p>
+            </div>
+        </div>
+
+        <!-- STRUCTURE OF THE HTML -->
+        <div id="my-container">
+            <div id="header">
+                <img src="#" alt="LOGO">
+                <h4>Header</h4>
+                <ul>
+                    <li> <a href="#">Home</a> </li>
+                    <li> <a href="#">Contact Us</a> </li>
+                    <li> <a href="#">Courses</a> </li>
+                </ul>
+            </div>
+            <div id="sidebar-1">SIDEBAR - 1</div>
+            <div id="main">MAIN</div>
+            <div id="sidebar-2" style="float: right;">SIDEBAR - 2</div>
+            <div id="footer">FOOTER</div>
+        </div>
+
+        <hr />
+
+        <!-- HTML 5 Semantics - HTML5 Elements -->
+        <div id="my-container-2">
+            <header style="border: 2px solid gray; padding: 10px;">
+                <nav>
+                    <ul>
+                        <li> <a href="#">Home - 2</a> </li>
+                        <li> <a href="#">Contact Us - 2</a> </li>
+                        <li> <a href="#">Courses - 2</a> </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <aside>sidebar-1</aside>
+
+            <main>
+                <section>
+                    <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A adipisci deleniti iusto, rerum maiores accusantium quo itaque aut dolor corporis, ipsum, numquam autem. Enim quod accusantium id quia accusamus, quis sint nostrum quam voluptatem cum? Repellendus, quia sunt! Odio adipisci repellat accusantium id veniam, inventore nihil distinctio dolorum voluptatum earum?</article>
+                    <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A adipisci deleniti iusto, rerum maiores accusantium quo itaque aut dolor corporis, ipsum, numquam autem. Enim quod accusantium id quia accusamus, quis sint nostrum quam voluptatem cum? Repellendus, quia sunt! Odio adipisci repellat accusantium id veniam, inventore nihil distinctio dolorum voluptatum earum?</article>
+                </section>
+                <section></section>
+            </main>
+
+            <aside>sidebar-2</aside>
+
+            <footer>FOOTER</footer>
+        </div>
+
+        <hr>
+
+        <h3>HTML Entities -</h3>
+        <p> Head Element - &lt;head&gt; &lt;/head&gt; </p>
+
+        <hr />
+        <div id="footer">
+            <p style="text-align: center;">&copy; 2022-23, Lovely Professional University</p>
+        </div>
+    </body>
+</html>

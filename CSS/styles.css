@@ -1,0 +1,214 @@
+/* CSS SELECTORS */
+
+/* body {
+    background: url('https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg');
+} */
+
+/* 1. Element Selector - 3rd Priority */
+/* p {
+    color: red;
+} */
+
+/* 2. ID Selector - 1st Priority */
+/* #my-para-1, #my-list-1, #my-list-2 {
+    color: navy;
+} */
+
+/* 3. Class Selector - 2nd Priority */
+/* .my-new-styles {
+    color: yellow;
+} */
+
+/* 5. Attribute Selectors - [ ] */
+/* Starts With = ^
+Ends With = $
+Contains = * */
+
+/* Q - Find anchor tags which points towards an absolute link - (href starts with https://) */
+/* element[attribute] */
+/* a[href^="https://"] {
+    color: red;
+} */
+
+/* a[href^="./"] {
+    color: green;
+} */
+
+/* Q - Find anchor tags which points towards an Indian website - ends with .in */
+/* a[href$=".in"] {
+    color: brown;
+}
+
+a[href$=".com"] {
+    color: seagreen;
+} */
+
+/* a[href*="/"] {
+    color: yellow;
+} */
+
+
+/* 4. Pseudo Selectors - ( : ) */
+/* #my-para-1:hover {
+    color: red;
+}
+
+#hotstar-link:visited {
+    color: maroon;
+}
+
+a:visited {
+    color: maroon;
+} */
+
+
+/* COLORS & GRADIENTS */
+/* 1. named colors 
+2. HEX coded colors
+3. RGB valued colors
+4. RGBA valued colors */
+
+/* #my-para-1 { */
+    /* color: #83cafc; */
+    /* color: rgb(131, 202, 252); */
+/* } */
+
+/* Liner Gradients */
+#my-container {
+    height: 450px;
+    width: 75%;
+
+    /* lG -> Top to Bottom */
+    /* background: linear-gradient(360deg, red, blue, green, yellow, white); */
+    /* Practical Implementation of LG & rgba() */
+    background: linear-gradient(90deg, rgba(28, 212, 159, 1), rgba(28, 212, 159, 0.3));
+}
+
+/* Radial Gradients */
+#my-container-2 {
+    height: 450px;
+    width: 75%;
+
+    background: radial-gradient(circle, red, blue 0%, yellow 25%, orange 50%, green 75%);
+}
+
+/* UNITS OF MEASUREMENTS */
+/* 1. Absolute Units -> Size is pre-defined */
+/* p { */
+    /* font-size: 1mm; */
+    /* font-size: 1cm; */
+    /* font-size: 20px; */
+/* } */
+
+/* 2. Realtive Units */
+/* p {
+    font-size: 1.1em;
+}
+
+#my-container-3 {
+    height: 400px;
+    width: 70%;
+
+} */
+
+/* BOX MODELS */
+
+#my-container-3 {
+    height: 400px;
+    width: 70%;
+
+    /* Box Model CSS Properties */
+
+    /* 1. border */
+    /* border: width style color; */
+    /* border: 5px solid violet; */
+    /* border: 5px dotted violet; */
+    /* border: 5px dashed violet; */
+    border: 5px double violet;
+    border-radius: 10px;
+
+    /* 2. padding -> THE SPACE B/W THE CONTENT AND THE BORDER (Inner Space from border) */
+    padding: 10px;
+    /* padding: top-bottom(px) left-right(px) */
+    /* padding: 10px 15px; */
+    /* padding: top(px) right(px) bottom(px) left(px) */
+    /* padding: 5px 10px 15px 20px; */
+    
+    /* USE THEM -> padding-left: ; padding-top: ; padding-bottom: ; padding-right: ; */
+
+    /* 3. margin */
+    /* margin: 15px; */
+    margin: 20px 0px;
+    /* margin: 5px 10px 15px 20px; */
+
+    /* margin-top: ; margin-bottom: ; margin-left: ; margin-right: ; */
+}
+
+/* #page-heading {
+    border: 3px solid violet;
+    margin: 0;
+    padding: 10px 0;
+} */
+
+
+/* FLEXBOX */
+#parent-div {
+    display: flex;
+
+    /* flex-wrap: nowrap; -> NOT CREATE MORE ROWS, ONLY ONE ROW IS USED */
+    flex-wrap: wrap;
+
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+}
+
+.div-child {
+    width: 50px;
+    height: 50px;
+    border: 2px solid navy;
+    padding: 10px;
+    text-align: center;
+    line-height: 50px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+}
+
+#flex-container {
+    display: flex;
+}
+
+.flex-item {
+    border: 3px double brown;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Creating NavBars */
+header {
+    display: flex;
+
+    /* justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: space-evenly; */
+
+    justify-content: space-between;
+}
+
+#nav-links li {
+    margin: 10px;
+}
+
+#nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.links {
+    text-decoration: none;
+}
