@@ -61,6 +61,9 @@
 
 
 // Conditional Statements
+// Differences b/w JS in Python
+// 1. No indentaion; using { } instead
+// 2. elif <---> else if 
 
 // num = 0
 // if(num > 0) {
@@ -73,9 +76,82 @@
 
 // INTERNAL TYPECASTING
 // int(input()) --> Python
-num2 = "100"
-if(num2 == 100) {
-    console.log('TRUE')
-} else {
-    console.log('FALSE')
+// num2 = 0            
+// console.log( typeof(num2) ) // string
+
+// num1 = 0
+// console.log( typeof(num1) ) // number
+
+// // IMP :- '==' only compare the values; not the DT
+// // if(num1 == num2) {
+// //     console.log('YES!')
+// // } else {
+// //     console.log('NO')
+// // }
+
+// // IMP :- '==='
+// if(num1 === num2) {
+//     console.log('YES!')
+// } else {
+//     console.log('NO')
+// }
+
+// if(num2 == 100) {
+//     console.log('TRUE')
+// } else {
+//     console.log('FALSE')
+// }
+
+
+// JS SCOPES -> let, var and const
+
+// let --> private scoped variables; which are only accessed INSIDE the block
+// var --> public scoped variable; which can be accseed BOTH, INSIDE & OUTSIDE the block
+// const --> works like a private scoped variables, value can never change, not initialse the costant variable
+
+// num1 = 100
+// num2 = 50
+// if(num1 > num2) {
+//     // Adding 1 to num1 
+//     num1 += 1
+//     // Subtract 1 from num2
+//     num2 -= 1
+//     // log the updated sum of num1 and num2
+//     let sum0
+//     const sum1 = 200
+
+//     sum0 = 100
+//     // sum1 = num1 + num2
+//     console.log(sum0)
+//     console.log(sum1)
+// } else {
+//     // Subtract 1 to num1 
+//     num1 -= 1
+//     // Add 1 from num2
+//     num2 += 1
+//     // log the updated sum of num1 and num2
+//     sum2 = num1 + num2
+// }
+
+// console.log(`The value of Sum - 1 is ${sum1}`)
+// console.log(`The value of Sum - 2 is ${sum2}`)
+
+
+// FUNCTIONS -->
+// SYNTAX :- function functionName(parameters) { ...functionBody }
+// function add(num1, num2) {
+//     return num1 + num2
+// }
+
+// const answer = add(100, 200)
+// console.log(answer)
+
+// Higher Order Functions --> Any function which can treat any function like a varibale
+// const newAddFunction = (parameters) => { ...functionBody }
+
+const newAddFunction = (n1, n2) => {
+    return n1 + n2
 }
+
+const newAns = newAddFunction(5, 50)
+console.log(newAns)
