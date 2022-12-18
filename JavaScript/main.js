@@ -1,4 +1,5 @@
 // NOTE --> Everything and anything in JS is an Object.
+// These objects are created at run-time
 
 // console.log('Hello from the JS File!')
 
@@ -136,22 +137,32 @@
 // console.log(`The value of Sum - 1 is ${sum1}`)
 // console.log(`The value of Sum - 2 is ${sum2}`)
 
+// Non-Primitive Data Types (Non-PDTs)
+// Combination or derivation of the primitiive data types
 
-// FUNCTIONS -->
-// SYNTAX :- function functionName(parameters) { ...functionBody }
-// function add(num1, num2) {
-//     return num1 + num2
-// }
+// 1. Array --> [  ] --> Collection of objects, with each object having a particular index
 
-// const answer = add(100, 200)
-// console.log(answer)
+// i.) Array Constructor
+// const myArr = new Array(5)
+// const myArr = new Array(100, 150, 200, 250, 300)
+// console.log(myArr)
 
-// Higher Order Functions --> Any function which can treat any function like a varibale
-// const newAddFunction = (parameters) => { ...functionBody }
+// ii.) Using the [ ] identifier
+// const ages = [ 17, 11, 13, 9, 15, 7, 12, 8, 4, 30, 25, 28, 19, 32 ]
+// console.log(ages)
 
-const newAddFunction = (n1, n2) => {
-    return n1 + n2
-}
+// // const myArr2 = [100, 'String', null, undefined, true]
+// // console.log(myArr2)
 
-const newAns = newAddFunction(5, 50)
-console.log(newAns)
+// // No of elts --> 3
+// // Each object in the array will have 3 elements
+// const newArr = [ [10, 20, 30], [40, 50, 60], [70, 80, 90] ]
+// console.log(newArr)
+
+// // Access the elements from the array
+// console.log(ages[4])
+// // 40
+// console.log( newArr[1][0] )
+
+
+// Array Methods
