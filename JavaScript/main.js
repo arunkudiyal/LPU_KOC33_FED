@@ -166,3 +166,23 @@
 
 
 // Array Methods
+const ages = [ 17, 11, 13, 9, 15, 7, 12, 8, 4, 30, 25, 28, 19, 32 ]
+// [ 17, 11, 13, 9, 15, 100, 200, 300, 400, 500, 12, 8, 4, 30, 25, 28, 19, 32 ]
+console.log(ages)
+
+// // Your arrays in JS are mutable
+// ages[5] = 100
+// console.log(ages)
+
+// objectName.methodsName()
+
+// i. push -> appends an element in the array
+const newAgesLength = ages.push(43)
+console.log(`The new length of the array is ${newAgesLength}`)
+console.log(ages)
+
+// ii. splice -> removes elements from the array
+// splice(index)
+const value = ages.splice(5, 1, 100, 200, 300, 400, 500)
+console.log(`Item removed is ${value}`)
+console.log(ages)
