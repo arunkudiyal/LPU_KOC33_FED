@@ -166,9 +166,9 @@
 
 
 // Array Methods
-const ages = [ 17, 11, 13, 9, 15, 7, 12, 8, 4, 30, 25, 28, 19, 32 ]
+// const ages = [ 17, 11, 13, 9, 15, 7, 12, 8, 4, 30, 25, 28, 19, 32 ]
 // [ 17, 11, 13, 9, 15, 100, 200, 300, 400, 500, 12, 8, 4, 30, 25, 28, 19, 32 ]
-console.log(ages)
+// console.log(ages)
 
 // // Your arrays in JS are mutable
 // ages[5] = 100
@@ -177,12 +177,72 @@ console.log(ages)
 // objectName.methodsName()
 
 // i. push -> appends an element in the array
-const newAgesLength = ages.push(43)
-console.log(`The new length of the array is ${newAgesLength}`)
-console.log(ages)
+// const newAgesLength = ages.push(43)
+// console.log(`The new length of the array is ${newAgesLength}`)
+// console.log(ages)
 
 // ii. splice -> removes elements from the array
-// splice(index)
-const value = ages.splice(5, 1, 100, 200, 300, 400, 500)
-console.log(`Item removed is ${value}`)
-console.log(ages)
+// splice(index) -> ages.splice(7) --> [ 17, 11, 13, 9, 15, 7, 12, 8 ]
+// splice(index, deleteCount) -> ages.splice(7, 2) --> [ 17, 11, 13, 9, 15, 7, 12, 30, 25, 28, 19, 32 ]
+// splice(index, deleteCount, elts to to added)
+// [ 17, 11, 13, 9, 15, 100, 200, 300, 400, 500, 12, 8, 4, 30, 25, 28, 19, 32 ]
+// const value = ages.splice(5, 1, 100, 200, 300, 400, 500)
+// console.log(`Item removed is ${value}`)
+// console.log(ages)
+
+// const ages = [ 17, 11, 13, 9, 15, 7, 12, 8, 4, 30, 25, 28, 19, 32 ]
+// const anotherAgesArr = [71, 67, 82, 74, 76, 67, 93]
+// const combinedArr = ages.concat(anotherAgesArr)
+// console.log(ages)
+// console.log(anotherAgesArr)
+// console.log(combinedArr)
+
+
+// Q:- Explain how an array in JS is reference type
+
+// memLoc(arr1) -> #fAB123
+// const arr1 = [10, 20, 30, 40, 50]
+
+// // copy of the array
+// // copyOfArr1 = #fAB123
+// // const copyOfArr1 = arr1
+
+// Copy mechanism using spread operator (...)
+// const copyOfArr1 = [ ...arr1 ]
+
+// // arr1 --> Add an elt
+// arr1.push(100)
+// // copyOfArr1.push(200)
+
+// console.log(arr1)
+// // [10, 20, 30, 40, 50, 100]
+// console.log(copyOfArr1)
+
+
+// 2. Objects In JS -> {  }    <--->   Dictonaries in Python
+// which helps you contain data in form of (key: value) pair
+
+const user = {
+    // propertyName : value1
+    name: 'Yash Sindhu',
+    age: 20,
+    courseOfStudy: 'B-Tech',
+    hobbies: ['Coding', 'Playing Soccer', 'Singing'],
+    canVote: true,
+    address: {
+        street: 'Sector 18',
+        city: 'Chandigarh',
+        state: 'Chandigarh'
+    }
+}
+console.log(user)
+
+// Access properties from the object ( nameOfObj.property )
+console.log(`Hello, my name is ${user.name}. I am ${user.age} years old`)
+
+
+// Access the second hobby of the user
+console.log(`The second hobby of the user is ${user.hobbies[1]}`)
+
+// Access the city of the user
+console.log(`The city of the user is ${user.address.city}`)
