@@ -222,27 +222,97 @@
 // 2. Objects In JS -> {  }    <--->   Dictonaries in Python
 // which helps you contain data in form of (key: value) pair
 
-const user = {
-    // propertyName : value1
-    name: 'Yash Sindhu',
-    age: 20,
-    courseOfStudy: 'B-Tech',
-    hobbies: ['Coding', 'Playing Soccer', 'Singing'],
-    canVote: true,
-    address: {
-        street: 'Sector 18',
-        city: 'Chandigarh',
-        state: 'Chandigarh'
-    }
-}
-console.log(user)
+// const user = {
+//     // propertyName : value1
+//     name: 'Yash Sindhu',
+//     age: 20,
+//     courseOfStudy: 'B-Tech',
+//     hobbies: ['Coding', 'Playing Soccer', 'Singing'],
+//     canVote: true,
+//     address: {
+//         street: 'Sector 18',
+//         city: 'Chandigarh',
+//         state: 'Chandigarh'
+//     }
+// }
+// console.log(user)
 
 // Access properties from the object ( nameOfObj.property )
-console.log(`Hello, my name is ${user.name}. I am ${user.age} years old`)
+// console.log(`Hello, my name is ${user.name}. I am ${user.age} years old`)
 
 
-// Access the second hobby of the user
-console.log(`The second hobby of the user is ${user.hobbies[1]}`)
+// // Access the second hobby of the user
+// console.log(`The second hobby of the user is ${user.hobbies[1]}`)
 
-// Access the city of the user
-console.log(`The city of the user is ${user.address.city}`)
+// // Access the city of the user
+// console.log(`The city of the user is ${user.address.city}`)
+
+
+// // Add an email prop
+// // nameOfObj.newProp = newValue
+// user.email = 'yash.sindhu@lpu.edu.in'
+// console.log(user)
+
+// const copyOfUser = { ...user }
+
+// copyOfUser.email = 'yash.sindhu@lpu.edu.in'
+// console.log(copyOfUser)
+
+
+// Array of Objects --> AoO --> [ {}, {}, {}, {}, ... ]
+const users = [
+    {
+        name: 'User One',
+        age: 19,
+        courseOfStudy: 'BE',
+        hobbies: ['Coding', 'Playing Soccer', 'Singing'],
+        canVote: true,
+        address: {
+            street: 'Sector 18',
+            city: 'Chandigarh',
+            state: 'Chandigarh'
+        }
+    },
+    {
+        name: 'User Two',
+        age: 20,
+        courseOfStudy: 'B-Tech',
+        hobbies: ['Cricket', 'Attending Hackathons', 'Dancing'],
+        canVote: true,
+        address: {
+            street: 'Sector 19',
+            city: 'Chandigarh',
+            state: 'Chandigarh'
+        }
+    },
+    {
+        name: 'User Three',
+        age: 21,
+        courseOfStudy: 'B-Pharm',
+        hobbies: ['Coding', 'Playing Soccer', 'Singing'],
+        canVote: true,
+        address: {
+            street: 'Sector 21',
+            city: 'Chandigarh',
+            state: 'Chandigarh'
+        }
+    }
+]
+
+console.log(users)
+
+// Print the name of all the three users
+console.log( `The name of User - 1 is ${users[0].name}, User - 2 is ${users[1].name} & User - 3 is ${users[2].name}` )
+
+// Print the city of each user
+console.log(`Street of user one - ${users[0].address.street}, Street of user two - ${users[1].address.street}, Street of user three - ${users[2].address.street}`)
+
+// Convert Object/Array/AoO into JSON --> JSON.stringify()
+// Stringify converts Objects <--> JSON
+const myApiData = JSON.stringify(users)
+console.log(myApiData)
+
+// Convert JSON into AoO/Array/Objects (depending on the API) --> JSON.parse()
+// Parse converts JSON <--> Objects
+const myObjectValuesFromAPI = JSON.parse(myApiData)
+console.log(myObjectValuesFromAPI)
